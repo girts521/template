@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import Nav from './Components/Nav';
 import Content from './Components/Content';
-import Card from './Components/Card';
-
+import Home from './Components/Home';
+import AllPosts from './Components/AllPosts';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-
     <Nav />
     
     <Content>
-    <h1>Hello world</h1>
-    <Card />
-    <Card />
-    <Card />
+    <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/all-posts" element={<AllPosts />} />
+    </Routes>
+   
     </Content>
-
-
     </>
   );
 }
