@@ -5,29 +5,12 @@ import styled from "styled-components";
 
 
 const NavDiv = styled.div`
-  background-color: transparent;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 32px;
-  height: 32px;
-  width:100%;
-  
-
-  /* div {
-    margin-left: 32px;
-    margin-right: 25px;
-    cursor: pointer;
-
-    @media (min-width: 768px) {
-      margin-left: 64px;
-      margin-right: 64px;
-    }
-  } */
-
-
+display: flex;
+flex-direction: row;
+justify-content: space-between; 
+margin-top: 30px;
+/* position: fixed; */
+width: 100%;
 `;
 
 const Nav = () => {

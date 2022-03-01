@@ -3,17 +3,25 @@ import Card from "./Card";
 import styled from "styled-components";
 
 const HomeDiv = styled.div`
-width: 100%;
-display: flex;
+display:flex;
 flex-direction: column;
 justify-content: center;
-align-items: center; 
+align-items: center;
+padding-top: 64px;  
+
+@media (min-width: 768px){
+    padding-top: 176px;
+    padding-bottom: 240px;
+}
 
 @media (min-width: 1440px) {
     flex-direction: row;
+    padding-top: 232px;
+    padding-bottom: 328px;
+    
 
-    & :not(:last-child){
-      margin-right: 25px;
+   & :not(:last-child){
+        margin-right: 25px;
     }
 }
 `

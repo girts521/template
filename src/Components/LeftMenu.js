@@ -1,17 +1,19 @@
 import React from "react";
 import Logo from "./Logo";
-import NavBtns from "./NavBtns";
+import NavBtn from "./NavBtn";
 import styled from "styled-components";
 
 const LeftMenuDiv = styled.div`
-display:flex;
-margin-left: 30px;
+display: flex;
+flex-direction: row;
+margin-left: 45px;
 
-@media (min-width: 768px) {
-    margin-left: 64px;
+
+@media (min-width: 768px){
+    margin-left: 65px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1440px){
     margin-left: 240px;
 }
 
@@ -22,7 +24,8 @@ const LeftMenu = () => {
     return (
         <LeftMenuDiv>
         <Logo />
-        <NavBtns />
+        <NavBtn link='/' text="Home" />
+        <NavBtn link='/all-posts' text="All Posts" />
         </LeftMenuDiv>
     )
 }

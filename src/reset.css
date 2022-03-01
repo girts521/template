@@ -14,8 +14,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	/* font-size: 100%; */
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -25,13 +25,14 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html, body{
-    height: 100%;
+    height: 100vh;
+	width: 100vw;
 }
 
 body {
 	line-height: 1;
-    
     background-color: #F9F7F7;
+	box-sizing: border-box;
 }
 ol, ul {
 	list-style: none;
