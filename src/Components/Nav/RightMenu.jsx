@@ -55,6 +55,11 @@ const UserMenu = styled.div`
     margin-bottom: 13px;
   }
 
+  @media (min-width: 1440px){
+    top: 89px;
+    right: 232px;
+  }
+
 `;
 
 const Backdrop = styled.div`
