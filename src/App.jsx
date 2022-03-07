@@ -1,11 +1,11 @@
 import logo from './logo.svg';
-import Nav from './Components/Nav';
+import Nav from './Components/Nav/Nav';
 import Content from './Components/Content';
-import Home from './Components/Home';
-import AllPosts from './Components/AllPosts';
-import Create from './Components/Create';
-import NotFound from './Components/NotFound';
-import LoginRegister from './Components/LoginRegister';
+import Home from './Components/Pages/Home';
+import AllPosts from './Components/Pages/AllPosts';
+import Create from './Components/Pages/Create';
+import NotFound from './Components/Pages/NotFound';
+import LoginRegister from './Components/Pages/LoginRegister';
 import { Routes, Route } from "react-router-dom";
 
 function App() {

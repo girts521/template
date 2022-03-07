@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const CardPost = styled.div`
-  height: 22.5rem;
+  height: 20.5rem;
   width: 19rem;
   max-width: 960px;
   margin-bottom: 30px;
@@ -11,7 +11,7 @@ const CardPost = styled.div`
   @media(min-width: 768px){
       display: flex;
       flex-direction: row;
-      width: auto;
+      min-width: 715px;
 
       height: 15rem;
       margin-left: 65px;
@@ -20,9 +20,10 @@ const CardPost = styled.div`
   }
 `;
 
-const Img = styled.div`
+const Img = styled.img`
   height: 9.5rem;
-  background-color: #dbe2ef;
+  width:100%;
+  /* background-color: #dbe2ef; */
 
   @media(min-width: 768px){
     width: 50%;
@@ -32,6 +33,10 @@ const Img = styled.div`
 
 const Text = styled.div`
   margin-top: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 
   h3{
       margin-bottom: 5px;
@@ -83,7 +88,7 @@ const Post = (props) => {
   return (
     <>
       <CardPost>
-        <Img />
+        <Img src={props.img}/>
         <Container>
           <Text>
             <h3>{props.heading}</h3>

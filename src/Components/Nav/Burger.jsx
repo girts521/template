@@ -23,7 +23,6 @@ const Burger = () => {
 
     const menuHandler = () => {
         setIsOpen(!isOpen)
-        console.log(isOpen)
     }
 
   return (
